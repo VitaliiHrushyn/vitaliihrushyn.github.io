@@ -119,7 +119,7 @@ body {
 .button {
 	padding: 0;
 	border: none;
-	position: relative;
+	position: absolute;
 	left: 165px;
 	right: 5px;
 	margin: 4px 0;
