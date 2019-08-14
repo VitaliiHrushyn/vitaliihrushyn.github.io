@@ -12,29 +12,45 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-3">
-					<img src="images/logo.png">
+					<img class="logo" src="images/logo.png">
 				</div>
 				<div class="col-md-6">
 					<nav>
 						<ul class="menu">
 							<li><a href="">Home</a></li>
-							<li><a href="">Products</a></li>
+							<li><a href="">Products<span class="diamond">></span></a>
+								<ul class="submenu">
+									<li><a href="">Lorem ipsum dolor</a></li>
+									<li><a href="">Sit amet</a></li>
+									<li><a href="">Consectetur adipisicing</a></li>
+									<li><a href="">Tempor incididunt</a></li>
+									<li><a href="">Dolore magna aliqua</a></li>
+									<li><a href="">Un enim ad minim veniam</a></li>
+									<li><a href="">Quis nostrud</a></li>
+								</ul>
+							</li>
 							<li><a href="">Payment</a></li>
 							<li><a href="">Shipping</a></li>
 						</ul>
 					</nav>
 				</div>
 				<div class="col-md-3">
-					<div class="row"></div>
+					<div class="row">
 						<div class="col-md-9">
-							<div class="search">
-								search
-							</div>					
-						</div>
+							<div class="row">
+								<div class="search-area">								
+									<input class="search" type="text" name="search" placeholder="">					
+									<input class="button" type="button" name="">								
+								</div>	
+							</div>				
+						</div> 
 						<div class="col-md-3">
-							<div class="basket">
-								<img src="images/basket.png"> <!-- remake to background image -->
-							</div>					
+							<div class="cart">
+								<!-- <img src="images/basket.png">			 -->
+								<div class="cart-inner"></div>
+								<div class="product-count">4</div>									
+							</div>
+											
 						</div>
 					</div>
 				</div>

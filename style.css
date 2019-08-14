@@ -37,13 +37,23 @@ body {
 	background-color: rgba(255,255,255,0.75);
 	padding: 25px 0;
 }
-.menu li {
+.logo {
+	margin-top: 7px;
+}
+.menu > li {
 	width: 25%;
 	float: left;	
 	border-left: 1px solid #2c71b8;
+	position: relative;
+}
+.menu li:hover .submenu {
+	display: block;
 }
 .menu li:last-child {
 	border-right: 1px solid #2c71b8;
+}
+.menu ul {
+	display: none;
 }
 .menu a {
 	display: block;
@@ -58,13 +68,100 @@ body {
 	background-color: #2c71b8;
 	color: white;
 }
-.search {
+.submenu {
+	list-style-type: none;	
+	position: absolute;
+	width: 292px;
+	/*left: -50px;
+	clear: both;*/
+	background-color: #2c71b8;
+}
+.submenu a {
+	color: white;
+	text-align: left;
+	padding-left: 30px;
+}
+.submenu a:hover {
+	background-color: white;
+	color: #2c71b8;
+}
+.submenu li:hover .menu a {
+	background-color: #2c71b8;
+	color: red;
+}
+.search-area {
 	display: block;
-	border: 1px solid #2c71b8;
+	width: 200px;
 	height: 40px;
 	margin: auto 0;
 	margin-left: 30px;
+	top: 4px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	position: relative;
+	
+	border: 1px solid #2c71b8;
+	
 }
-.basket {
+.search {
+
+	padding: 5px;
+	display: block;
+	position: absolute;
+	border: none;
+	float: left;
+	width: 200px;
+	height: 40px;
+	background-color: transparent;
+
+	}
+.button {
+	padding: 0;
+	border: none;
+	position: relative;
+	left: 165px;
+	right: 5px;
+	margin: 4px 0;
+	background-color: #2c71b8;
+	background-image: url(images/search.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 30px;
+	height: 30px;
+}
+.product-count {
+	display: block;
+	position: absolute;
+	bottom: 30px;
+	left: -10px;
+	height: 20px;
+	width: 20px;
+	border: 1px solid #2c71b8;
+	color: white;
+	background-color: #2c71b8;
+	text-align: center;
+	border-radius: 50%;
+	font-size: 0.9em;
+	padding: 2px;
+}
+.cart {
+	display: block;
+	position: relative;
+	margin-left: 30px;
+	margin-top: 4px;
+	width: 40px	
+	}
+.cart-inner {
+	background-image: url(images/basket.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: white;
+	height: 40px;
+}	
+.diamond {
+	display: inline-block;
 	margin-left: 10px;
-}
+	transform: rotate(90deg);
+	font-weight: bold;
+	font-size: 0.9em;
