@@ -40,7 +40,7 @@
 							<div class="row">
 								<div class="search-area">								
 									<input class="search" type="text" name="search" placeholder="">					
-									<input class="button" type="button" name="">								
+									<input class="search-button" type="button" name="">								
 								</div>	
 							</div>				
 						</div> 
@@ -69,7 +69,81 @@
 				<div class="row">
 					<div class="col-md-3">
 						<div class="sidebar">
-							sidebar
+							<div class="sidebar-top-area">
+								<div class="sidebar-options-area">
+									<div class="sidebar-options-name">
+										DEVICE TYPE
+									</div>
+									<div class="sidebar-options-content">
+										<div class="sidebar-options-checkbox">										
+											<input type="checkbox" id="Laptop" name="Laptop">
+											<label for="Laptop"><span class="checkbox-padding"><span>Laptop</label>
+										</div>
+										<div class="sidebar-options-checkbox">
+											<input type="checkbox" id="Tablet" name="Tablet">
+											<label for="Tablet"><span class="checkbox-padding"><span>Tablet</label>
+										</div>
+									</div>
+								</div>
+								<div class="sidebar-options-area">
+									<div class="sidebar-options-name">
+										COLOR
+									</div>
+									<div class="sidebar-options-content">
+										<div class="sidebar-options-checkbox">										
+											<input type="checkbox" id="Black" name="Black">
+											<label for="Black"><span class="checkbox-padding"><span>Black</label>
+										</div>
+										<div class="sidebar-options-checkbox">
+											<input type="checkbox" id="Red" name="Red">
+											<label for="Red"><span class="checkbox-padding"><span>Red</label>
+										</div>
+										<div class="sidebar-options-checkbox">
+											<input type="checkbox" id="Green" name="Green">
+											<label for="Green"><span class="checkbox-padding"><span>Green</label>
+										</div>
+										<div class="sidebar-options-checkbox">
+											<input type="checkbox" id="Blue" name="Blue">
+											<label for="Blue"><span class="checkbox-padding"><span>Blue</label>
+										</div>
+										<div class="sidebar-options-checkbox">
+											<input type="checkbox" id="Orange" name="Orange">
+											<label for="Orange"><span class="checkbox-padding"><span>Orange</label>
+										</div>
+									</div>
+								</div>
+								<div class="sidebar-options-area">
+									<div class="sidebar-options-name">
+										RAM
+									</div>
+									<div class="sidebar-options-content">
+										<div class="sidebar-options-checkbox">										
+											<input type="checkbox" id="1Gb" name="1Gb">
+											<label for="1Gb"><span class="checkbox-padding"><span>1Gb</label>
+										</div>
+										<div class="sidebar-options-checkbox">
+											<input type="checkbox" id="2Gb" name="2Gb">
+											<label for="2Gb"><span class="checkbox-padding"><span>2Gb</label>
+										</div>
+										<div class="sidebar-options-checkbox">
+											<input type="checkbox" id="4Gb" name="4Gb">
+											<label for="4Gb"><span class="checkbox-padding"><span>4Gb</label>
+										</div>
+										<div class="sidebar-options-checkbox">
+											<input type="checkbox" id="6Gb" name="6Gb">
+											<label for="6Gb"><span class="checkbox-padding"><span>6Gb</label>
+										</div>
+										<div class="sidebar-options-checkbox">
+											<input type="checkbox" id="8Gb" name="8Gb">
+											<label for="8Gb"><span class="checkbox-padding"><span>8Gb</label>
+										</div>
+									</div>
+								</div>	
+							</div>						
+							<div class="sidebar-show-more-options">
+								<a href="">show more options ...</a>
+							</div>
+							<div class="sidebar-submit-button">SUBMIT</div>
 						</div>				
 					</div>
 					<div class="col-md-9">
@@ -77,7 +151,7 @@
 							<div class="all-products-description">
 								<div class="col-md-8">	
 									<div class="breadcrumbs">
-										Home page > Producats > <span style="font-style: underline">Laptops and Tablets</span>
+										Home page > Producats > <span class="breadcrumbs-current">Laptops and Tablets</span>
 									</div>
 									<div class="current-article">
 										Laptops and Tablets
@@ -97,187 +171,231 @@
 							</div>
 							<div class="product-cards-area row">
 								<div class="col-md-4">
-										<div class="product-card">
-											<div class="product-header">
-												<div class="product-image">
-													<img src="images/products/monitor.png">
-												</div>
-												<div class="product-target"></div>
-												<div class="product-like"></div>
+									<div class="product-card">
+										<div class="product-header">
+											<div class="product-image">
+												<img src="images/products/monitor.png">
 											</div>
-											<div class="product-name">#1 Device Name</div>
-											<div class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-											<div class="product-type">Laptop</div>
-											<div class="product-screen-size">7 inches</div>
-											<div class="product-ram">1 Gb</div>
-											<div class="product-price">$599<sup>25</sup></div>
-											<div class="product-more-details">MORE DETAILS</div>
-											<div class="product-add-to-cart">ADD TO CART</div>
+											<div class="product-target"></div>
+											<div class="product-like"></div>
 										</div>
+										<div class="product-name">#1 Device Name</div>
+										<div class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+										<div class="product-type">
+											<span class="product-feature-name">TYPE: </span>
+											Laptop</div>
+										<div class="product-screen-size">
+											<span class="product-feature-name">SCREEN SIZE: </span>
+											7 inches</div>
+										<div class="product-ram">
+											<span class="product-feature-name">RAM: </span>
+											1 Gb</div>
+										<div class="product-price">$599<sup>25</sup></div>
+										<div class="product-more-details">MORE DETAILS</div>
+										<div class="product-add-to-cart">ADD TO CART</div>
+									</div>
 								</div>
 								<div class="col-md-4">
-										<div class="product-card">
-											<div class="product-header">
-												<div class="product-image">
-													<img src="images/products/monitor.png">
-												</div>
-												<div class="product-target"></div>
-												<div class="product-like"></div>
+									<div class="product-card">
+										<div class="product-header">
+											<div class="product-image">
+												<img src="images/products/2.png">
 											</div>
-											<div class="product-name">#1 Device Name</div>
-											<div class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-											<div class="product-type">Laptop</div>
-											<div class="product-screen-size">7 inches</div>
-											<div class="product-ram">1 Gb</div>
-											<div class="product-price">$599<sup>25</sup></div>
-											<div class="product-more-details">MORE DETAILS</div>
-											<div class="product-add-to-cart">ADD TO CART</div>
+											<div class="product-target"></div>
+											<div class="product-like"></div>
 										</div>
-								</div><div class="col-md-4">
-										<div class="product-card">
-											<div class="product-header">
-												<div class="product-image">
-													<img src="images/products/monitor.png">
-												</div>
-												<div class="product-target"></div>
-												<div class="product-like"></div>
-											</div>
-											<div class="product-name">#1 Device Name</div>
-											<div class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-											<div class="product-type">Laptop</div>
-											<div class="product-screen-size">7 inches</div>
-											<div class="product-ram">1 Gb</div>
-											<div class="product-price">$599<sup>25</sup></div>
-											<div class="product-more-details">MORE DETAILS</div>
-											<div class="product-add-to-cart">ADD TO CART</div>
-										</div>
-								</div><div class="col-md-4">
-										<div class="product-card">
-											<div class="product-header">
-												<div class="product-image">
-													<img src="images/products/monitor.png">
-												</div>
-												<div class="product-target"></div>
-												<div class="product-like"></div>
-											</div>
-											<div class="product-name">#1 Device Name</div>
-											<div class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-											<div class="product-type">Laptop</div>
-											<div class="product-screen-size">7 inches</div>
-											<div class="product-ram">1 Gb</div>
-											<div class="product-price">$599<sup>25</sup></div>
-											<div class="product-more-details">MORE DETAILS</div>
-											<div class="product-add-to-cart">ADD TO CART</div>
-										</div>
-								</div><div class="col-md-4">
-										<div class="product-card">
-											<div class="product-header">
-												<div class="product-image">
-													<img src="images/products/monitor.png">
-												</div>
-												<div class="product-target"></div>
-												<div class="product-like"></div>
-											</div>
-											<div class="product-name">#1 Device Name</div>
-											<div class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-											<div class="product-type">Laptop</div>
-											<div class="product-screen-size">7 inches</div>
-											<div class="product-ram">1 Gb</div>
-											<div class="product-price">$599<sup>25</sup></div>
-											<div class="product-more-details">MORE DETAILS</div>
-											<div class="product-add-to-cart">ADD TO CART</div>
-										</div>
-								</div><div class="col-md-4">
-										<div class="product-card">
-											<div class="product-header">
-												<div class="product-image">
-													<img src="images/products/monitor.png">
-												</div>
-												<div class="product-target"></div>
-												<div class="product-like"></div>
-											</div>
-											<div class="product-name">#1 Device Name</div>
-											<div class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-											<div class="product-type">Laptop</div>
-											<div class="product-screen-size">7 inches</div>
-											<div class="product-ram">1 Gb</div>
-											<div class="product-price">$599<sup>25</sup></div>
-											<div class="product-more-details">MORE DETAILS</div>
-											<div class="product-add-to-cart">ADD TO CART</div>
-										</div>
-								</div><div class="col-md-4">
-										<div class="product-card">
-											<div class="product-header">
-												<div class="product-image">
-													<img src="images/products/monitor.png">
-												</div>
-												<div class="product-target"></div>
-												<div class="product-like"></div>
-											</div>
-											<div class="product-name">#1 Device Name</div>
-											<div class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-											<div class="product-type">Laptop</div>
-											<div class="product-screen-size">7 inches</div>
-											<div class="product-ram">1 Gb</div>
-											<div class="product-price">$599<sup>25</sup></div>
-											<div class="product-more-details">MORE DETAILS</div>
-											<div class="product-add-to-cart">ADD TO CART</div>
-										</div>
-								</div><div class="col-md-4">
-										<div class="product-card">
-											<div class="product-header">
-												<div class="product-image">
-													<img src="images/products/monitor.png">
-												</div>
-												<div class="product-target"></div>
-												<div class="product-like"></div>
-											</div>
-											<div class="product-name">#1 Device Name</div>
-											<div class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-											<div class="product-type">Laptop</div>
-											<div class="product-screen-size">7 inches</div>
-											<div class="product-ram">1 Gb</div>
-											<div class="product-price">$599<sup>25</sup></div>
-											<div class="product-more-details">MORE DETAILS</div>
-											<div class="product-add-to-cart">ADD TO CART</div>
-										</div>
-								</div><div class="col-md-4">
-										<div class="product-card">
-											<div class="product-header">
-												<div class="product-image">
-													<img src="images/products/monitor.png">
-												</div>
-												<div class="product-target"></div>
-												<div class="product-like"></div>
-											</div>
-											<div class="product-name">#1 Device Name</div>
-											<div class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-											<div class="product-type">Laptop</div>
-											<div class="product-screen-size">7 inches</div>
-											<div class="product-ram">1 Gb</div>
-											<div class="product-price">$599<sup>25</sup></div>
-											<div class="product-more-details">MORE DETAILS</div>
-											<div class="product-add-to-cart">ADD TO CART</div>
-										</div>
-								</div><div class="col-md-4">
-										<div class="product-card">
-											<div class="product-header">
-												<div class="product-image">
-													<img src="images/products/monitor.png">
-												</div>
-												<div class="product-target"></div>
-												<div class="product-like"></div>
-											</div>
-											<div class="product-name">#1 Device Name</div>
-											<div class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-											<div class="product-type">Laptop</div>
-											<div class="product-screen-size">7 inches</div>
-											<div class="product-ram">1 Gb</div>
-											<div class="product-price">$599<sup>25</sup></div>
-											<div class="product-more-details">MORE DETAILS</div>
-											<div class="product-add-to-cart">ADD TO CART</div>
-										</div>
+										<div class="product-name">#1 Device Name</div>
+										<div class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+										<div class="product-type">
+											<span class="product-feature-name">TYPE: </span>
+											Laptop</div>
+										<div class="product-screen-size">
+											<span class="product-feature-name">SCREEN SIZE: </span>
+											7 inches</div>
+										<div class="product-ram">
+											<span class="product-feature-name">RAM: </span>
+											1 Gb</div>
+										<div class="product-price">$1250<sup>99</sup></div>
+										<div class="product-more-details">MORE DETAILS</div>
+										<div class="product-add-to-cart">ADD TO CART</div>
+									</div>
 								</div>
+								<div class="col-md-4">
+									<div class="product-card">
+										<div class="product-header">
+											<div class="product-image">
+												<img src="images/products/3.png">
+											</div>
+											<div class="product-target"></div>
+											<div class="product-like"></div>
+										</div>
+										<div class="product-name">#1 Device Name</div>
+										<div class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+										<div class="product-type">
+											<span class="product-feature-name">TYPE: </span>
+											Laptop</div>
+										<div class="product-screen-size">
+											<span class="product-feature-name">SCREEN SIZE: </span>
+											7 inches</div>
+										<div class="product-ram">
+											<span class="product-feature-name">RAM: </span>
+											1 Gb</div>
+										<div class="product-price">$399<sup>50</sup></div>
+										<div class="product-more-details">MORE DETAILS</div>
+										<div class="product-add-to-cart">ADD TO CART</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="product-card">
+										<div class="product-header">
+											<div class="product-image">
+												<img src="images/products/11.png">
+											</div>
+											<div class="product-target"></div>
+											<div class="product-like"></div>
+										</div>
+										<div class="product-name">#1 Device Name</div>
+										<div class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+										<div class="product-type">
+											<span class="product-feature-name">TYPE: </span>
+											Laptop</div>
+										<div class="product-screen-size">
+											<span class="product-feature-name">SCREEN SIZE: </span>
+											7 inches</div>
+										<div class="product-ram">
+											<span class="product-feature-name">RAM: </span>
+											1 Gb</div>
+										<div class="product-price">$599<sup>25</sup></div>
+										<div class="product-more-details">MORE DETAILS</div>
+										<div class="product-add-to-cart">ADD TO CART</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="product-card">
+										<div class="product-header">
+											<div class="product-image">
+												<img src="images/products/22.png">
+											</div>
+											<div class="product-target"></div>
+											<div class="product-like"></div>
+										</div>
+										<div class="product-name">#1 Device Name</div>
+										<div class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+										<div class="product-type">
+											<span class="product-feature-name">TYPE: </span>
+											Laptop</div>
+										<div class="product-screen-size">
+											<span class="product-feature-name">SCREEN SIZE: </span>
+											7 inches</div>
+										<div class="product-ram">
+											<span class="product-feature-name">RAM: </span>
+											1 Gb</div>
+										<div class="product-price">$1250<sup>99</sup></div>
+										<div class="product-more-details">MORE DETAILS</div>
+										<div class="product-add-to-cart">ADD TO CART</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="product-card">
+										<div class="product-header">
+											<div class="product-image">
+												<img src="images/products/33.png">
+											</div>
+											<div class="product-target"></div>
+											<div class="product-like"></div>
+										</div>
+										<div class="product-name">#1 Device Name</div>
+										<div class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+										<div class="product-type">
+											<span class="product-feature-name">TYPE: </span>
+											Laptop</div>
+										<div class="product-screen-size">
+											<span class="product-feature-name">SCREEN SIZE: </span>
+											7 inches</div>
+										<div class="product-ram">
+											<span class="product-feature-name">RAM: </span>
+											1 Gb</div>
+										<div class="product-price">$399<sup>50</sup></div>
+										<div class="product-more-details">MORE DETAILS</div>
+										<div class="product-add-to-cart">ADD TO CART</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="product-card">
+										<div class="product-header">
+											<div class="product-image">
+												<img src="images/products/33.png">
+											</div>
+											<div class="product-target"></div>
+											<div class="product-like"></div>
+										</div>
+										<div class="product-name">#1 Device Name</div>
+										<div class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+										<div class="product-type">
+											<span class="product-feature-name">TYPE: </span>
+											Laptop</div>
+										<div class="product-screen-size">
+											<span class="product-feature-name">SCREEN SIZE: </span>
+											7 inches</div>
+										<div class="product-ram">
+											<span class="product-feature-name">RAM: </span>
+											1 Gb</div>
+										<div class="product-price">$599<sup>25</sup></div>
+										<div class="product-more-details">MORE DETAILS</div>
+										<div class="product-add-to-cart">ADD TO CART</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="product-card">
+										<div class="product-header">
+											<div class="product-image">
+												<img src="images/products/2.png">
+											</div>
+											<div class="product-target"></div>
+											<div class="product-like"></div>
+										</div>
+										<div class="product-name">#1 Device Name</div>
+										<div class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+										<div class="product-type">
+											<span class="product-feature-name">TYPE: </span>
+											Laptop</div>
+										<div class="product-screen-size">
+											<span class="product-feature-name">SCREEN SIZE: </span>
+											7 inches</div>
+										<div class="product-ram">
+											<span class="product-feature-name">RAM: </span>
+											1 Gb</div>
+										<div class="product-price">$1250<sup>99</sup></div>
+										<div class="product-more-details">MORE DETAILS</div>
+										<div class="product-add-to-cart">ADD TO CART</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="product-card">
+										<div class="product-header">
+											<div class="product-image">
+												<img src="images/products/3.png">
+											</div>
+											<div class="product-target"></div>
+											<div class="product-like"></div>
+										</div>
+										<div class="product-name">#1 Device Name</div>
+										<div class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+										<div class="product-type">
+											<span class="product-feature-name">TYPE: </span>
+											Laptop</div>
+										<div class="product-screen-size">
+											<span class="product-feature-name">SCREEN SIZE: </span>
+											7 inches</div>
+										<div class="product-ram">
+											<span class="product-feature-name">RAM: </span>
+											1 Gb</div>
+										<div class="product-price">$399<sup>50</sup></div>
+										<div class="product-more-details">MORE DETAILS</div>
+										<div class="product-add-to-cart">ADD TO CART</div>
+									</div>
+								</div>
+								
 							</div>
 							<div class="load-more">
 								Load more ...
