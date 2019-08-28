@@ -368,7 +368,7 @@ body {
 	width: 30px;
 	border: 1px solid #2c71b8;
 }
-.product-like:hover {
+.product-like:hover, .liked {
 	background-image: url(images/like-light.png);
 	background-color: #2c71b8;
 }
@@ -440,4 +440,14 @@ body {
 .sidebar-submit-button {
 	background-color: rgba(44,113,184,0.5);
 	margin-top: 0px;
+}
+.quantity-input {
+	display: block;
+ 	text-align: center;
+}
+.decrement-button {
+
+}
+.increment-button {
+
 }
